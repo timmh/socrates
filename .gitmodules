@@ -1,0 +1,3 @@
+[submodule "camera_trap/ammod-sensor-coap-api"]
+	path = camera_trap/ammod-sensor-coap-api
+	url = https://codesignp211.informatik.uni-erlangen.de:450/ammod/ammod-sensor-coap-api.git
