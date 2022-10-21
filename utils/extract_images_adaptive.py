@@ -6,7 +6,7 @@ from tqdm.auto import tqdm
 from rectify import rectify, RectificationException
 import cv2
 import numpy as np
-from crestereo import CREStereo, CameraConfig
+from crestereo import CREStereo
 
 
 def main():
@@ -25,8 +25,6 @@ def main():
     processing_size = (1280, 720)
     crestereo = CREStereo(
         f'weights/crestereo/crestereo_combined_iter5_{processing_size[1]}x{processing_size[0]}.onnx',
-        camera_config=CameraConfig(0.25, 3871) ,
-        max_dist=100,
     )
 
     for in_file in tqdm(sorted(glob.glob(os.path.join(args.in_dir, "*.mkv")))):
