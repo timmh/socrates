@@ -6,7 +6,6 @@ import argparse
 import cv2
 import numpy as np
 import av
-from cotr_utils import get_cotr
 
 
 class RectificationException(Exception):
@@ -211,6 +210,7 @@ def rectify(**args):
                     show_correspondences(left, right, np.stack([pts1[:, 0], pts1[:, 1], pts2[:, 0], pts2[:, 1], dm_score, dm_idx], axis=0).transpose(1, 0))
                 break
             elif use_cotr:
+                from cotr_utils import get_cotr
                 pts1, pts2 = get_cotr()(left, right)
                 if show_matches:
                     from deepmatching_utils import show_correspondences
