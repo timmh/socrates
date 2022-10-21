@@ -6,7 +6,6 @@ import argparse
 import cv2
 import numpy as np
 import av
-from deepmatching_utils import deepmatching, show_correspondences
 from cotr_utils import get_cotr
 
 
@@ -202,6 +201,7 @@ def rectify(**args):
                 right = cv2.remap(right, undistort_map_right, rectify_map_right, cv2.INTER_CUBIC)
 
             if use_deepmatching:
+                from deepmatching_utils import deepmatching
                 pts1, pts2, dm_score, dm_idx = deepmatching(
                     cv2.cvtColor(left, cv2.COLOR_RGB2GRAY),
                     cv2.cvtColor(right, cv2.COLOR_RGB2GRAY),
@@ -213,6 +213,7 @@ def rectify(**args):
             elif use_cotr:
                 pts1, pts2 = get_cotr()(left, right)
                 if show_matches:
+                    from deepmatching_utils import show_correspondences
                     show_correspondences(left, right, np.stack([pts1[:, 0], pts1[:, 1], pts2[:, 0], pts2[:, 1], dm_score, dm_idx], axis=0).transpose(1, 0))
                 break
             else:
