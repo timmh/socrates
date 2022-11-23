@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "SOCRATES: Introducing Depth in Visual Wildlife Monitoring Using Stereo Vision"
+message: "If you use this software, please cite it as below."
+authors:
+  - given-names: Timm
+    family-names: Haucke
+    orcid: 'https://orcid.org/0000-0003-1696-6937'
+  - given-names: Hjalmar S.
+    family-names: Kühl
+  - given-names: Volker
+    family-names: Steinhage
+    orcid: 'https://orcid.org/0000-0002-3172-3645'
+doi: 10.3390/s22239082
+date-released: 2022-11-23
