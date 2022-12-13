@@ -1,6 +1,6 @@
 # SOCRATES
 
-Code and supplementary material for "SOCRATES: Introducing Depth in Visual Wildlife Monitoring using Stereo Vision" [[`Article`](https://doi.org/10.3390/s22239082)] [[`Raw Data`](https://doi.org/10.5281/zenodo.6992653)] [[`Labeled Data`](https://doi.org/10.5281/zenodo.7035934)] [[`Website`](https://timm.haucke.xyz/publications/socrates)]
+Code and supplementary material for "SOCRATES: Introducing Depth in Visual Wildlife Monitoring using Stereo Vision" [[`Article`](https://doi.org/10.3390/s22239082)] [[`Data`](https://timm.haucke.xyz/datasets/plittersdorf)] [[`Website`](https://timm.haucke.xyz/publications/socrates)]
 
 ## Citation
 
